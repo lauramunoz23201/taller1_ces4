@@ -25,7 +25,7 @@ const App = () => {
 			);
 
 			if (cartProduct) {
-				if (product.quantity < product.stock) {
+				if (cartProduct.quantity < product.stock) {
 					tempCart[cartProductIndex] = {
 						...product,
 						quantity: cartProduct.quantity + 1,
@@ -73,7 +73,7 @@ const App = () => {
 
 					<div className='cart'>
 						<h2 className='n-products'>
-							<ProductsAdded cart={cart} />
+							<ProductsAdded cart={cart} products={products} />
 						</h2>
 						<br></br>
 					</div>
@@ -107,11 +107,8 @@ const App = () => {
 						<h2>Summary</h2>
 						<Summary cart={cart} />
 					</div>
-
 						</div>
 					</div>
-
-				
 					
 		</>
 	);

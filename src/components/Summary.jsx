@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 
 const Summary = ({ cart }) => {
-	const [discount, setDiscount] = useState(0);
 	const [subtotal, setSubtotal] = useState(0);
+	const [discount, setDiscount] = useState(0);
 	const [total, setTotal] = useState(0);
 
 	useEffect(() => {
@@ -13,7 +13,9 @@ const Summary = ({ cart }) => {
 		});
 
 		setSubtotal(mySubtotal);
-	}, [cart, discount]);
+	}, [cart]);
+
+	
 
 	useEffect(() => {
 		setTotal(subtotal - discount);
