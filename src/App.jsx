@@ -80,36 +80,34 @@ const App = () => {
 				</div>
 			</header>
 
-				<div className='container_body'>
-						<h3>Productos</h3>
-						<br />
-						<div className='list_products'>
-							<ProductsList products={products} addProduct={addProduct} />
-						</div>
+			<div className='container_body'>
+				<h3>Productos</h3>
+				<br />
+				<div className='list_products'>
+					<ProductsList products={products} addProduct={addProduct} />
+				</div>
 
-
-						<div className='added_products'>
-						{cart.length > 0 && (
-							<>
-								<div>
-									<hr></hr>
-									<h3>Carrito</h3>
-									<Cart
-										cart={cart}
-										addProduct={addProduct}
-										removeProduct={removeProduct}
-									/>
-								</div>
-							</>
-						)}
+				<div className='added_products'>
+					{cart.length > 0 && (
+						<>
+							<div>
+								<hr></hr>
+								<h3>Carrito</h3>
+								<Cart
+									cart={cart}
+									addProduct={addProduct}
+									removeProduct={removeProduct}
+								/>
+							</div>
+						</>
+					)}
 
 					<div className='container_summary'>
 						<h2>Summary</h2>
 						<Summary cart={cart} />
 					</div>
-						</div>
-					</div>
-					
+				</div>
+			</div>
 		</>
 	);
 };

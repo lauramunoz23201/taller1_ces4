@@ -1,7 +1,6 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
 const ProductsAdded = ({ cart }) => {
-	
 	const [totalUnits, setTotalUnits] = useState(0);
 	useEffect(() => {
 		let myTotalUnits = 0;
@@ -14,9 +13,7 @@ const ProductsAdded = ({ cart }) => {
 	}, [cart]);
 	return (
 		<>
-		
-		
-		<div>
+			<div>
 				<div>Productos {totalUnits}</div>
 			</div>
 		</>

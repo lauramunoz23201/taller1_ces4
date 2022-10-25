@@ -15,8 +15,6 @@ const Summary = ({ cart }) => {
 		setSubtotal(mySubtotal);
 	}, [cart]);
 
-	
-
 	useEffect(() => {
 		setTotal(subtotal - discount);
 	}, [subtotal, discount]);
@@ -37,7 +35,7 @@ const Summary = ({ cart }) => {
 		<div>
 			<input type='number' onChange={handleDiscountChange} value={discount} />
 			<div>
-				<div>Subtotal {subtotal}</div> 
+				<div>Subtotal {subtotal}</div>
 			</div>
 			<div>
 				<div>Coupon {discount}</div>

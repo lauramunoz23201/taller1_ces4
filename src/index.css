@@ -1,102 +1,100 @@
 @import url('https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong');
 :root {
-  --fontPrimary: "Trirong", sans-serif;
-  --fontSecondary: "Trirong", sans-serif;
+	--fontPrimary: 'Trirong', sans-serif;
+	--fontSecondary: 'Trirong', sans-serif;
 }
 
 html {
-  box-sizing: border-box;
-  font-size: 62.5%;
+	box-sizing: border-box;
+	font-size: 62.5%;
 }
 
-
-
 body {
-  font-family: var(--fontPrimary);
-  font-size: 1.6rem;
-  line-height: 1.5;
+	font-family: var(--fontPrimary);
+	font-size: 1.6rem;
+	line-height: 1.5;
 }
 
 /* Global */
 
-.container{
-  max-width: 120rem;
-  width: 90%;
-  margin: 0 auto;
+.container {
+	max-width: 120rem;
+	width: 90%;
+	margin: 0 auto;
 }
 
-h1,h2,h3{
-  font-weight: 700;
-  font-family: var(--fontSecondary);
+h1,
+h2,
+h3 {
+	font-weight: 700;
+	font-family: var(--fontSecondary);
 }
 
-h1{
-  font-size: 4.1rem;
+h1 {
+	font-size: 4.1rem;
 }
 
-h2{
-  font: 3.4rem;
+h2 {
+	font: 3.4rem;
 }
 
-h3{
-  font-size: 2.5rem;
-  text-align: center;
+h3 {
+	font-size: 2.5rem;
+	text-align: center;
 }
 
-img{
-  max-width: 100%;
-  display: block;
+img {
+	max-width: 100%;
+	display: block;
 }
 /* Utilities */
 
-.text-center{
-  text-align: center;
+.text-center {
+	text-align: center;
 }
 
-.header{
-  background-color: antiquewhite;
-  max-width: 100%;
-  padding: 1.5rem 0;
-  color: var(--white);
+.header {
+	background-color: antiquewhite;
+	max-width: 100%;
+	padding: 1.5rem 0;
+	color: var(--white);
 }
 
-.container_header{
-  width: 80%;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.container_header {
+	width: 80%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
-.cart{
-  background-color: white;
-  display: flex;
-  padding: .7rem 1.5rem;
-  border-radius: 2rem;
-  color: black;
+.cart {
+	background-color: white;
+	display: flex;
+	padding: 0.7rem 1.5rem;
+	border-radius: 2rem;
+	color: black;
 }
 
-
-
-.list_products{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin: 40px 80px 40px 80px;
-  padding: 20px 20px 20px 120px;
+.list_products {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 2rem;
+	margin: 40px 80px 40px 80px;
+	padding: 20px 20px 20px 120px;
 }
 
-.added_products{
+.added_products {
 	display: grid;
 	margin: 40px 80px 40px 80px;
 	padding: 20px 20px 20px 120px;
 }
 
 /* Summary */
-.container_summary{
-  margin: 2rem;
-  display: grid;
-  grid-template-columns: 50%;
-  width: 100%;
-  gap: 3rem;
+.container_summary {
+	margin: 2rem;
+	display: grid;
+	grid-template-columns: 50%;
+	width: 100%;
+	gap: 3rem;
 }
