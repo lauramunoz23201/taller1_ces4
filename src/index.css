@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 :root {
-	--fontPrimary: 'Trirong', sans-serif;
-	--fontSecondary: 'Trirong', sans-serif;
+	--fontPrimary: 'Poppins', sans-serif;
+	--fontSecondary: 'Poppins', sans-serif;
 }
 
 html {
@@ -11,9 +11,11 @@ html {
 
 body {
 	font-family: var(--fontPrimary);
+	background-color: #F2F2F2;
 	font-size: 1.6rem;
 	line-height: 1.5;
 }
+
 
 /* Global */
 
@@ -31,7 +33,11 @@ h3 {
 }
 
 h1 {
-	font-size: 4.1rem;
+	font-size: 5.5rem;
+	align-content: center;
+	align-items: center;
+	font-weight: 900;
+	color: white;
 }
 
 h2 {
@@ -39,8 +45,10 @@ h2 {
 }
 
 h3 {
-	font-size: 2.5rem;
+	font-size: 3.5rem;
 	text-align: center;
+	padding: 00px 0px 0px 80px;
+
 }
 
 img {
@@ -51,50 +59,72 @@ img {
 
 .text-center {
 	text-align: center;
+	margin-left: 140px;
 }
 
 .header {
-	background-color: antiquewhite;
-	max-width: 100%;
-	padding: 1.5rem 0;
+	background-color: #04B4AE;
+    z-index: 999;
+    width: 90%;
+    margin-left: 80px;
+	height: 150px;
 	color: var(--white);
 }
 
 .container_header {
-	width: 80%;
+	width: 90%;
 	margin: auto;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	align-content: center;
+}
+
+.container_body {
+	width: 90%;
+	align-items: center;
+	align-content: center;
+}
+.container_carrito {
+	width: 100%;
+	align-items: center;
+	align-content: center;
 }
 
 .cart {
 	background-color: white;
 	display: flex;
-	padding: 0.7rem 1.5rem;
+	padding: 0.5rem 5rem;
+	grid-template-columns: repeat(4, 1fr);
 	border-radius: 2rem;
+	margin-top: 8px;
 	color: black;
 }
 
 .list_products {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 2rem;
-	margin: 40px 80px 40px 80px;
-	padding: 20px 20px 20px 120px;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 8rem;
+	margin: auto;
+	margin-left: 100px;
+	padding: 10px 20px 20px 80px;
 }
 
 .added_products {
 	display: grid;
-	margin: 40px 80px 40px 80px;
+	margin: 10px 50px 40px 30px;
 	padding: 20px 20px 20px 120px;
 }
 
 /* Summary */
 .container_summary {
-	margin: 2rem;
+	background-color: #04B4AE;
+	margin-left: 130px;
+	color: white;
 	display: grid;
-	grid-template-columns: 50%;
-	width: 100%;
-	gap: 3rem;
+	grid-template-columns: 80%;
+	width: 90%;
+	gap: 2rem;
+	align-items: center;
+	align-content: center;
 }

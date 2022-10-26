@@ -1,5 +1,11 @@
 import ProductsList from './components/ProductsList';
 import Cart from './components/Cart';
+import {
+	FaShoppingCart,
+	FaLaptopHouse,
+	FaShoppingBag,
+	FaClipboardList,
+} from 'react-icons/fa';
 
 import './index.css';
 
@@ -69,30 +75,46 @@ const App = () => {
 			<header className='header'>
 				<div className='container_header'>
 					{/* Este componente recibe el array de productos mediante las propiedades y los renderiza */}
-					<h1>Tienda</h1>
+					<h1>
+						<FaLaptopHouse /> Tienda virtual
+					</h1>
 
 					<div className='cart'>
-						<h2 className='n-products'>
+						<h2>
+							<FaShoppingCart></FaShoppingCart>
 							<ProductsAdded cart={cart} products={products} />
 						</h2>
-						<br></br>
+						<br />
 					</div>
 				</div>
 			</header>
-
+			<br />
+			<br />
 			<div className='container_body'>
-				<h3>Productos</h3>
-				<br />
+				<h3>
+					{' '}
+					<FaShoppingBag /> Productos
+				</h3>
 				<div className='list_products'>
 					<ProductsList products={products} addProduct={addProduct} />
 				</div>
 
+				<div className='container_summary'>
+					<h3>
+						<FaClipboardList></FaClipboardList> Summary
+					</h3>
+					<h2 className='text-center'>
+						<Summary cart={cart} />
+					</h2>
+				</div>
 				<div className='added_products'>
 					{cart.length > 0 && (
 						<>
-							<div>
-								<hr></hr>
-								<h3>Carrito</h3>
+							<div className='container_carrito'>
+								<h3>
+									{' '}
+									<FaShoppingCart> </FaShoppingCart> Carrito
+								</h3>
 								<Cart
 									cart={cart}
 									addProduct={addProduct}
@@ -101,11 +123,6 @@ const App = () => {
 							</div>
 						</>
 					)}
-
-					<div className='container_summary'>
-						<h2>Summary</h2>
-						<Summary cart={cart} />
-					</div>
 				</div>
 			</div>
 		</>
